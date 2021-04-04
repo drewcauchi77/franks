@@ -1,0 +1,1 @@
+$(".tab-header").click(function(){var a=$(this).data("tab");$(".tab-header").removeClass("active-tab"),$(".product-tab").removeClass("active-tab"),$('.tab-header[data-tab="'+a+'"]').addClass("active-tab"),$('.product-tab[data-tab="'+a+'"]').addClass("active-tab"),console.log(a)});

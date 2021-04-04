@@ -1,0 +1,60 @@
+/* On screens that are 600px or less */
+@media screen and (max-width: 2250px) {
+  .my-custom-no-product{
+    border-top-color: #1e85be !important;
+    width: 420% !important;
+    }
+    .my-custom-no-product span{
+        color:white;
+        background-color: black;
+        padding: 5px;
+        display: inline-block;
+    }
+    .no-products{
+      position: absolute !important;
+    }
+  
+}
+
+
+@media screen and (max-width: 990px) {
+  .no-products{
+      position: relative !important;
+      width: 200% !important;
+  }
+  .tax-product_cat #page .page-container .children-sidebar {
+    position: relative;
+    top: 0;
+    width: 25%;
+    }
+}
+@media screen and (max-width: 770px) {
+  .no-products{
+      width: 100% !important;
+      line-height: 1.5em !important;
+
+  }
+}
+@media screen and (max-width: 770px) {
+  .no-products{
+      width: 100% !important;
+      line-height: 1.5em !important;
+      font-size: 70%;
+
+  }
+}
+@media screen and (max-width: 380px) {
+  .tax-product_cat #page .page-container .children-sidebar {
+    font-size: 95%;
+    }
+    .my-custom-no-product {
+    width: 500% !important;
+    }
+}
+
+/* Removal of the gift wrapping sections in the checkout page */
+
+.woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-additional-fields #my_custom_checkout_field #gift_receipt_field{
+  display: none;
+}
+

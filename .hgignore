@@ -1,0 +1,5 @@
+# use glob syntax.
+syntax: glob
+
+css/style.css
+prepros-6.config

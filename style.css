@@ -1,0 +1,1785 @@
+/*!
+Theme Name: franks
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: franks
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+franks is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover, a:focus, a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/* ============== 7th Nov, 2019 ================== */ 
+.custom-offer-section-class p{
+    text-align: center;
+    color: #2f3030;
+    line-height: 1.5;
+	font-size:18px;
+}
+
+.section-button{
+	text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+	margin-bottom:50px;
+}
+
+.section-button a{
+	text-decoration: none;
+    font-weight: 500;
+    background-color: #2f3030;
+    color: #fff;
+    padding: 10px 15px;
+	border: 1px solid #2f3030;
+	transition: all 0.5s;
+}
+
+.section-button a:hover{
+    border: 1px solid #000;
+    color: #fff ;
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+.custom-free-delivery-class p {
+    color: #fff;
+    text-align: center;
+	margin: 5px;
+}
+
+.custom-free-delivery-class p span {
+    padding-left: 24px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.gender_dropdown {
+    text-align: center;
+}
+.site-header{
+	position: fixed;
+}
+.woocommerce .franks-main-banner, .woocommerce .shop-banner{
+	padding: 0;
+}
+.seasonal-offers ul {
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}
+.seasonal-offers ul.subsubcat {
+    padding-left: 5px;
+	margin-bottom: 10px;
+}
+.seasonal-offers ul li a {
+    display: block;
+    position: relative;
+    
+    text-decoration: none;
+    -webkit-transition: 0.5s all ease 0s;
+    -o-transition: 0.5s all ease 0s;
+    transition: 0.5s all ease 0s;
+    
+}
+.seasonal-offers ul li a span.plus {
+    position: absolute;
+    right: 0;
+    
+    line-height: normal;
+    height: auto;
+    top: 50%;
+    font-weight: 900;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+/*start my css 11-09-2019*/
+.custom-free-delivery-class p {
+      background-color: #f0f0f0;
+    margin: 0;
+    padding: 10px;
+    color: #2f3030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	    font-weight: 700;
+}
+.custom-free-delivery-class p img {
+    max-width: 25px;
+	    margin-right: 10px;
+	
+}
+.custom-free-delivery-class p span {
+    font-size: 12px;
+}
+.title-divider-container .title {
+    letter-spacing: 1px;
+    padding: 8px 33px;
+    background-color: #f0f0f0;
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+}
+.title-divider-container::before{
+    height: 2px;
+    top: 42%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	width:80%;
+}
+.custom-offer-image-class div {
+	    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fnk-art-class .title-divider-container .title {
+        background-color: #fff;
+    font-weight: 300;
+    padding: 8px 12px;
+}
+.fnk-art-class.shop-main{
+	padding-top:0 !important;
+}
+.fnk-art-class .title-divider-container::before{
+	    width: 80%;
+    background-color: #444;
+    height: 1px;
+}
+.custom-offer-section-class p {
+    font-weight: 600;
+    font-size: 16px;
+}
+.woocommerce ul.products li.product .button, .woocommerce-page ul.products li.product .button{
+	padding:10px;
+	font-size:13px;
+	border:1px solid #2f3030;
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+}
+.woocommerce ul.products li.product .button:hover, .woocommerce-page ul.products li.product .button:hover{
+	background-color:#fff;
+	color:#2f3030;
+}
+.section-button a{
+	font-size:14px;
+}
+.fns-section-class select {
+    padding: 5px 45px;
+	-webkit-appearance: none;
+}
+.fns-section-class{
+	padding-bottom:20px;
+}
+.gender_dropdown{
+	padding:10px 0;
+}
+.title-divider-container{
+	padding-bottom:8px;
+}
+.fnk-shop-class > ul.sub-menu {
+    display: flex !important;
+}
+.fnk-shop-class {
+    background-color: rgb(240, 240, 240);
+}
+.custom-free-delivery-class {
+/*    padding-top: 34px;
+*/}
+.hesperiden .tp-bullet{
+	background-color:#fff !important;
+	background:#fff;
+	border:1px solid #000;
+}
+.woocommerce-js .secondary-bar #site-navigation .menu-main-menu-container>ul>li>.sub-menu{
+	width:100%;
+	left:0;
+	right:0;
+}
+#site-navigation{
+	padding:0 !important;
+}
+.fnk-shop-class > .sub-menu {
+    padding: 0 9% !important;
+}
+.tp-bullets .tp-bullet{
+	top:70px !important;
+}
+.berocket_aapf_reset_button:hover{
+	background-color:#000 !important;
+}
+/*en my css 11-09-2019*/
+.berocket_aapf_widget li.slider span.left input, .berocket_aapf_widget li.slider span.right input {
+    border: 1px solid #2f3030 !important;
+    font-style: normal !important;
+    padding: 0 !important;
+    width: 50px !important;
+    border-radius: 0;
+    text-align: center;
+    height: 40px;
+}
+.berocket_aapf_widget li.slider div.slide{
+	padding-top:20px;
+}
+.fnk-art-class {
+    padding-top: 70px !important;
+}
+.fns-banner-class p{
+	background-position:center center;
+}
+/*start my css 11-11-2019*/
+.fns-banner-class p{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 240px 0;
+    margin-top: 0;
+	    font-size: 25px;
+    font-weight: 700;
+}
+.fns-banner-class {
+    text-align: center;
+}
+.gen-shop-block .inner-gen-block:before, .gen-shop-block a:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+	opacity:0;
+	transition:0.2s ease-in-out;
+	-webkit-transition:0.2s ease-in-out;
+	-moz-transition:0.2s ease-in-out;
+	-o-transition:0.2s ease-in-out;
+}
+.gen-shop-block .inner-gen-block:hover:before, .gen-shop-block a:hover:before{
+	opacity:1;
+}
+.gen-shop-block .inner-gen-block, .gen-shop-block a {
+    position: relative;
+}
+.shop-categories-container .gen-shop-block .inner-gen-block:after{
+	content:none;
+}
+.shop-categories-container .gen-shop-block .inner-gen-block h1{
+	opacity:0;
+}
+.shop-categories-container .gen-shop-block .inner-gen-block:hover h1{
+	opacity:1;
+	color:#fff;
+	border-bottom:1px solid #fff;
+}
+.shop-categories-container .gen-shop-block{
+	height:520px;
+	position:relative;
+}
+#shop-main {
+    padding-top: 25px !important;
+}
+.woocommerce-js .secondary-bar #site-navigation .menu-main-menu-container>ul>li>.sub-menu>li.category>.sub-menu{
+	width:80%;
+}
+.children-prod-container select.orderby {
+	padding: 7px;
+    font-size: 14px;
+	    -webkit-appearance: none;
+}
+.tax-product_cat #page .page-container .children-sidebar .category-container .child-filter{
+	font-weight:600;
+	padding-bottom:8px;
+}
+.fnk-arrow-class,.woocommerce-ordering {
+    -webkit-appearance: none;
+    position: relative;
+}
+.fnk-arrow-class:before ,.woocommerce-ordering:before{
+    content: '';
+    position: absolute;
+    background-image: url(https://franks.com.mt/wp-content/uploads/2019/11/arrow-down.png);
+    background-size: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    right: 44%;
+    z-index: 9999;
+    top: 23px;
+	    pointer-events: none;
+}
+.hermes .tp-bullet:after{
+	background-color:#2f3030;
+}
+ .woocommerce-ordering:before{
+	    right: 5%;
+	    top:15px;
+}
+.tax-product_cat #page .page-container .children-sidebar form input {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.tips-tricks .feat-banner-cont{
+	padding-top:0;
+}
+.back-to-home-banner .inner-container{
+	    padding: 20px 0;
+}
+.woocommerce-js .secondary-bar #site-navigation.toggled .menu-toggle{
+	    background-image: url(http://franks.stevesandco.com/wp-content/uploads/2019/11/up-arrow.svg);
+}
+.foot-cont.steves-container.fns-footer-logo {
+    display: flex;
+    width: 100%;
+	align-items:center;
+}
+h1.steves-text.fns-logo-footer {
+    padding: 0 !important;
+}
+h1.steves-text.fns-logo-footer a {
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid;
+    padding: 7px;
+}
+.fns-logo-footer a {
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 130px;
+    float: left;
+    text-transform: uppercase;
+}
+.fns-text-footer {
+        font-size: 12px;
+    color: #fff;
+    width: 146px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    opacity: 0.7;
+    font-weight: 300;
+}
+.woocommerce ul.products li.product .button:hover, .woocommerce-page ul.products li.product .button:hover{
+	background-color:#000;
+	border-color:#000;
+	color:#fff;
+}
+.shop-categories-container .gen-shop-block{
+	padding-right: 0;
+    padding-bottom: 0;
+}
+	.shop-brands-slider .slick-arrow{
+		display:block !Important;
+	}
+	.shop-brands-slider .slick-prev, .shop-brands-slider .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -200px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+	.shop-brands-slider .slick-next {
+    right: 0;
+}
+	.shop-brands-slider .slick-prev {
+    left: 0;
+}
+	.shop-brands-slider .slick-prev:before {
+    content: '←';
+}
+	.shop-brands-slider .slick-next:before {
+    content: '→';
+}
+	.shop-brands-slider .slick-prev:before, .shop-brands-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: 1;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+	.shop-brands-slider .slick-prev, .shop-brands-slider .slick-next{
+		top:20px;
+	}
+.shop-brands-slider {
+    padding: 0 50px;
+}
+@media (max-width:991px){
+	.fns-banner-class p{
+		padding:130px 0;
+	}
+}
+@media (max-width:990px){
+	.tax-product_cat #page .page-container .children-sidebar .primary-filter-container .child-filter{
+		    margin: 0 auto;
+	}
+		.tax-product_cat #page .page-container .children-sidebar .primary-filter-container .price-filter-cont {
+    width: 100%;
+    margin: 0 auto;
+}
+	.clear-filters .berocket_aapf_widget{
+		margin-right:0;
+	}
+	.tax-product_cat #page .page-container .children-sidebar .filter-trigger{
+		margin:0 auto 15px;
+	}
+	.tax-product_cat #page .page-container .children-sidebar {
+    width: 100%;
+    text-align: center;
+    display: inherit;
+}
+	.tax-product_cat #page .page-container .shop-sidebar .filter-container, .tax-product_cat #page .page-container .children-sidebar .filter-container{
+		border-right:0;
+	}
+	.berocket_aapf_widget li{
+		text-align:left;
+	}
+}
+@media (min-width:768px){
+	.tips-tricks,  main{
+		padding-top:0 !important;
+	}
+	.slick-arrow {
+       /*display: none !important;*/
+	}
+	.site-header .search-container label {
+    text-transform: uppercase;
+    display: block;
+}
+	.hesperiden.tparrows{
+		display:none;
+	}
+}
+@media (max-width:1199px){
+	.woocommerce-js .secondary-bar #site-navigation .menu-main-menu-container>ul>li>.sub-menu>li.category>a{
+		font-size: 11px;
+	}
+}
+@media (max-width:1024px){
+
+}
+@media (max-width:849px){
+	.foot-cont.steves-container.fns-footer-logo {
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width:768px){
+	
+	.site-header .header-container .main-bar .col.logo {
+justify-content: start;
+align-items: center;
+float: left;
+padding: 10px;
+}
+
+.site-header .header-container .main-bar .col.account {
+justify-self: flex-end;
+display: inline-block;
+float: right;
+}
+
+.site-header .header-container .main-bar #cart-wishlist {
+display: grid;
+grid-auto-flow: column;
+display: inline-flex;
+}
+
+.site-header .header-container .main-bar #cart-wishlist .account-links {
+display: grid;
+align-items: center;
+grid-auto-flow: column;
+justify-content: flex-end;
+display: flex;
+}
+
+.site-header .header-container .main-bar #cart-wishlist .wishlist-cont {
+width: 50px;
+height: 50px;
+display: inline-block;
+float: right;
+}
+.menu-main-menu-container .fnk-shop-class > ul.sub-menu {
+    display: flex !important;
+}
+		.shop-brands-slider.slick-initialized.slick-slider {
+    padding: 0 50px;
+}
+}
+@media (max-width:767px){
+	.shop-categories-container .gen-shop-block .inner-gen-block{
+		height:380px;
+	}
+	.shop-categories-container .gen-shop-block{
+		    margin-bottom: 130px;
+		padding-bottom:0 !important;
+	}
+	.news--promotions.custom-offer-image-class div {
+    height: 220px;
+}
+	.gold-card.custom-offer-image-class.custom-offer-image-class div{
+		    height: 250px;
+            transform: scale(2.2);
+		margin-bottom: 80px;
+		
+	}
+	.gold-card.custom-offer-image-class.custom-offer-image-class{
+		overflow:hidden;
+	}
+	.tax-product_cat term-fragrance .fnk-art-class.gucci-bloom-gocce-di-fiori {
+    padding-top: 0 !important;
+}
+	.filter-container.price-container.primary-filter-container {
+    height: 100%;
+}
+	.tax-product_cat #page .page-container .children-sidebar .primary-filter-container .price-filter-cont {
+    width: 145px;
+}
+
+	.title-divider-container .title{
+		    min-width: 163px;
+    display: inline-block;
+		padding:8px;
+	}
+
+	.page-template-shop-main main#shop-main {
+    padding-top: 0 !important;
+}
+	.shop-main .title-divider-container{
+		display:none;
+	}
+	
+	.fns-banner-class p {
+    padding: 67px 0;
+}
+	.shop-categories-container .gen-shop-block:nth-of-type(odd) {
+    padding-right: 0;
+}.shop-categories-container .gen-shop-block:nth-of-type(even){
+		padding-left: 0;
+	}
+	#shop-main .page-container {
+    width: 100%;
+}
+	.custom-free-delivery-class {
+/*    padding-top: 0;
+*/}
+
+	.fns-section-class {
+    padding-bottom: 0;
+}
+	.fns-trending-section-class, .fns-new-in-slider-section{
+		padding:0 20px;
+	}
+	.tax-product_cat #page .page-container .children-sidebar{
+		padding: 30px 0 30px;
+	}
+	.title-divider-container .title{
+		font-size:14px;
+	}
+	.shop-categories-container .gen-shop-block .inner-gen-block h1{
+		    bottom: -65px;
+		top:auto;
+		    font-size: 25px;
+	}
+	.shop-categories-container .gen-shop-block .inner-gen-block h1 {
+    opacity: 1;
+}
+	.shop-categories-container .gen-shop-block{
+		padding-bottom:60px;
+	}
+	.fnk-arrow-class:before{
+		    right: 42.5%;
+	}
+
+	#site-navigation{
+		padding:0 15px !important;
+	}
+	.menu-main-menu-container .fnk-shop-class > ul.sub-menu {
+    display: none !important;
+}
+	#searchform:after {
+    content: '';
+    position: absolute;
+    background-image: url(http://franks.stevesandco.com/wp-content/uploads/2019/11/search.svg);
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+    display: block;
+		    top: 15px;
+    right: 0;
+}
+	#searchform{
+		position:relative;
+	}
+	.woocommerce-js .secondary-bar #site-navigation .search-container #searchform input{
+		    border-bottom: 2px solid #dbd6d6;
+		    padding: 16px 30px 3px 0;
+	}
+	.woocommerce-js .secondary-bar #site-navigation.toggled .menu-main-menu-container{
+		width:100%;
+	}
+	.fnk-shop-class {
+    background-color: #fff;
+}
+	.woocommerce-js .secondary-bar #site-navigation .menu-main-menu-container .nav-menu li a{
+		font-weight:700;
+	}
+	.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: 1;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+	
+	.slick-prev:before {
+    content: '←';
+}
+	.slick-next:before {
+    content: '→';
+}
+	.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -145px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+	.slick-prev {
+    left: 0;
+}
+	.slick-next {
+    right: 0;
+}
+	.fnk-art-class .title-divider-container::before{
+		width:100%;
+	}
+	.title-divider-container::before{
+		width:100%;
+	}
+	
+	.custom-offer-section-class p{
+		    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px 0 25px;
+	}
+	.site-footer .inner-footer .newsletter-container .newsletter-title{
+		font-size:22px;
+	}
+	.foot-cont .additional-pages .left-side-menu ,
+	.foot-cont .additional-pages .right-side-menu{
+    width: 50%;
+    float: left;
+}
+	
+	.site-footer .inner-footer .privacy-container .additional-pages {
+    display: inline-block;
+    width: 100%;
+}
+	.home .page-container{
+		width:100%;
+	}
+}
+@media (max-width:667px){
+	.shop-brands-slider .slick-prev, .shop-brands-slider .slick-next {
+    top: 7px;
+}
+}
+@media (max-width:600px){
+	.shop-brands-slider .slick-prev, .shop-brands-slider .slick-next {
+    top: -40px;
+}
+	.custom-free-delivery-class p{
+		display:block;
+	}
+	.custom-free-delivery-class p span {
+    display: block;
+    padding-top: 5px;
+}
+	.custom-free-delivery-class p img{
+		max-width:22px;
+		vertical-align: middle;
+	}
+	#searchform:after{
+		    background-size: 17px;
+    width: 17px;
+    height: 17px;
+	}
+}
+@media (max-width:480px){
+	
+	.woocommerce-js .secondary-bar #site-navigation .search-container #searchform input{
+		width:130px;
+	}
+}
+@media (max-width:468px){
+	 .woocommerce-ordering:before {
+    right: 27%;
+}
+}
+@media (max-width:375px){
+	.shop-brands-slider .slick-prev, .shop-brands-slider .slick-next {
+    top: -67px;
+}
+
+	.fnk-arrow-class:before {
+    right: 32%;
+}
+	.title-divider-container .title {
+    font-size: 12px;
+}
+}
+/*en my css 11-11-2019*/
+
+div.custom-pro-category-class {
+    height: 320px !important;
+    width: auto !important;
+}
+
+.fns-product-title {
+    font-size: 23px;
+    font-family: "RomanaBT-Bold",sans-serif;
+    margin: 0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: #2f3030;
+	text-align:center;
+}
+
+/**********************/
+
+@media screen and (min-width: 768px)
+{
+	.site-content 
+	{
+		padding-top: 0 !important;
+	}
+}
+.archive.tax-product_cat li.child-filter {
+    list-style: none;
+}
+
+.archive.tax-product_cat li.child-filter a
+{
+  text-decoration:none;
+   color:#2f3030;
+  font-weight:700 !important;
+}
+
+.archive.tax-product_cat li.child-filter a:hover 
+{ 
+
+color:#000 !important;
+text-decoration:underline !important;
+
+}

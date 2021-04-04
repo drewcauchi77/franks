@@ -1,0 +1,1765 @@
+@font-face {
+    font-family: "Avenir-Black";
+    src: url(../../fonts/Avenir-Black/Avenir-Black.eot);
+    src: url(../../fonts/Avenir-Black/Avenir-Black.otf), url(../../fonts/Avenir-Black/Avenir-Black.ttf) format("truetype"), url(../../fonts/Avenir-Black/Avenir-Black.woff) format("woff"),
+        url(../../fonts/Avenir-Black/Avenir-Black.svg) format("svg");
+}
+@font-face {
+    font-family: "Avenir-Light";
+    src: url(../../fonts/Avenir-Light/Avenir-Light.eot);
+    src: url(../../fonts/Avenir-Light/Avenir-Light.otf), url(../../fonts/Avenir-Light/Avenir-Light.ttf) format("truetype"), url(../../fonts/Avenir-Light/Avenir-Light.woff) format("woff"),
+        url(../../fonts/Avenir-Light/Avenir-Light.svg) format("svg");
+}
+@font-face {
+    font-family: "Avenir-Medium";
+    src: url(../../fonts/Avenir-Medium/Avenir-Medium.eot);
+    src: url(../../fonts/Avenir-Medium/Avenir-Medium.otf), url(../../fonts/Avenir-Medium/Avenir-Medium.ttf) format("truetype"), url(../../fonts/Avenir-Medium/Avenir-Medium.woff) format("woff"),
+        url(../../fonts/Avenir-Medium/Avenir-Medium.svg) format("svg");
+}
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url(../../fonts/Avenir-Roman/Avenir-Roman.eot);
+    src: url(../../fonts/Avenir-Roman/Avenir-Roman.otf), url(../../fonts/Avenir-Roman/Avenir-Roman.ttf) format("truetype"), url(../../fonts/Avenir-Roman/Avenir-Roman.woff) format("woff"),
+        url(../../fonts/Avenir-Roman/Avenir-Roman.svg) format("svg");
+}
+@font-face {
+    font-family: "AvenirLTStd-Black";
+    src: url(../../fonts/AvenirLTStd-Black/AvenirLTStd-Black.eot);
+    src: url(../../fonts/AvenirLTStd-Black/AvenirLTStd-Black.otf), url(../../fonts/AvenirLTStd-Black/AvenirLTStd-Black.ttf) format("truetype"), url(../../fonts/AvenirLTStd-Black/AvenirLTStd-Black.woff) format("woff"),
+        url(../../fonts/AvenirLTStd-Black/AvenirLTStd-Black.svg) format("svg");
+}
+@font-face {
+    font-family: "AvenirLTStd-Light";
+    src: url(../../fonts/AvenirLTStd-Light/AvenirLTStd-Light.eot);
+    src: url(../../fonts/AvenirLTStd-Light/AvenirLTStd-Light.otf), url(../../fonts/AvenirLTStd-Light/AvenirLTStd-Light.ttf) format("truetype"), url(../../fonts/AvenirLTStd-Light/AvenirLTStd-Light.woff) format("woff"),
+        url(../../fonts/AvenirLTStd-Light/AvenirLTStd-Light.svg) format("svg");
+}
+@font-face {
+    font-family: "HoeflerText-Regular";
+    src: url(../../fonts/HoeflerText-Regular/HoeflerText-Regular.ttf) format("truetype"), url(../../fonts/HoeflerText-Regular/HoeflerText-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "RomanaBT-Bold";
+    src: url(../../fonts/RomanaBT-Bold/RomanaBT-Bold.eot);
+    src: url(../../fonts/RomanaBT-Bold/RomanaBT-Bold.ttf) format("truetype"), url(../../fonts/RomanaBT-Bold/RomanaBT-Bold.woff) format("woff"), url(../../fonts/RomanaBT-Bold/RomanaBT-Bold.svg) format("svg");
+}
+@font-face {
+    font-family: "RomanaBT-Roman";
+    src: url(../../fonts/RomanaBT-Roman/RomanaBT-Roman.eot);
+    src: url(../../fonts/RomanaBT-Roman/RomanaBT-Roman.ttf) format("truetype"), url(../../fonts/RomanaBT-Roman/RomanaBT-Roman.woff) format("woff"), url(../../fonts/RomanaBT-Roman/RomanaBT-Roman.svg) format("svg");
+}
+@font-face {
+    font-family: "RomanaTOT-Bol";
+    src: url(../../fonts/RomanaTOT-Bol/RomanaTOT-Bol.eot);
+    src: url(../../fonts/RomanaTOT-Bol/RomanaTOT-Bol.otf), url(../../fonts/RomanaTOT-Bol/RomanaTOT-Bol.ttf) format("truetype"), url(../../fonts/RomanaTOT-Bol/RomanaTOT-Bol.woff) format("woff"),
+        url(../../fonts/RomanaTOT-Bol/RomanaTOT-Bol.svg) format("svg");
+}
+@font-face {
+    font-family: "Romana";
+    src: url(../../fonts/Romana/romanab.ttf) format("truetype"), url(../../fonts/Romana/romanab.woff) format("woff"), url(../../fonts/Romana/romanab.woff2);
+}
+a {
+    outline: none !important;
+}
+.fancybox-container {
+    z-index: 99999 !important;
+}
+.fancybox-container .fancybox-inner .fancybox-infobar {
+    display: none;
+}
+.fancybox-container .fancybox-inner .fancybox-toolbar .fancybox-button--play {
+    display: none;
+}
+.dior-content .dior-container {
+    margin: 0px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.dior-content .dior-container .dior-header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: relative;
+}
+.dior-content .dior-container .dior-header .dior-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 40px;
+}
+.dior-content .dior-container .dior-image-sliders .dior-campaign-banner {
+    position: relative;
+}
+.dior-content .dior-container .dior-image-sliders .dior-campaign-banner a .banner {
+    object-fit: cover;
+    width: 100%;
+}
+.dior-content .dior-container .dior-image-sliders .dior-campaign-banner .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: fit-content;
+}
+.dior-content .dior-container .dior-image-sliders .dior-campaign-banner .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.dior-content .dior-container .dior-image-sliders .dior-campaign-banner .slick-dots li.slick-active {
+    background-color: white;
+}
+.dior-content .dior-container .woo-path {
+    height: 60px;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    background-color: #fff;
+}
+.dior-content .dior-container .woo-path .woocommerce-breadcrumb {
+    position: absolute;
+    padding: 30px 0px 20px 0px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+.dior-content .dior-container .woo-path .woocommerce-breadcrumb a {
+    text-decoration: underline;
+}
+.dior-content .dior-container .dior-main-navigation {
+    background-color: #f1f2f2;
+}
+.dior-content .dior-container .dior-main-navigation .navigation-title {
+    display: none;
+}
+.dior-content .dior-container .dior-description {
+    display: none;
+}
+.dior-content .dior-container .dior-description .brand-desc {
+    font-family: "Avenir-Roman", sans-serif;
+    font-size: 17px;
+}
+.dior-content .dior-container .dior-desktop-navigation {
+    display: none;
+}
+.dior-content .dior-container .dior-highlighted-section {
+    display: none;
+}
+.dior-content .dior-container .dior-highlighted-section .highlighted-section .backstage-pros-img {
+    object-fit: cover;
+}
+.dior-content .dior-container .dior-highlighted-section .highlighted-section a span:hover {
+    background-color: black;
+}
+.dior-content .dior-container .woocommerce-seller {
+    width: 90%;
+    margin: 0 auto;
+}
+.dior-content .dior-container .woocommerce-seller .title-holder {
+    position: relative;
+    text-align: center;
+    margin: 25px 0px;
+}
+.dior-content .dior-container .woocommerce-seller .title-holder h2 {
+    display: inline-block;
+    background-color: #f1f2f2;
+    padding: 10px 20px;
+    font-family: "AvenirLTStd-Black", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.dior-content .dior-container .woocommerce-seller .title-holder:after {
+    content: "";
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product {
+    padding: 20px;
+    margin: 0px;
+    height: fit-content;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link {
+    height: auto;
+    min-height: 300px;
+    display: grid;
+    grid-template-rows: auto minmax(70px, auto) minmax(50px, auto);
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .product-image-holder {
+    margin-bottom: 20px;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .inner-prod-text {
+    min-height: 90px;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .inner-prod-text .dior-new-tag {
+    margin: 0px;
+    display: inline-block;
+    font-size: 16px;
+    color: #7b7d7d;
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 100;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .inner-prod-text .dior-category {
+    font-family: "RomanaTOT-Bol", sans-serif;
+    font-size: 17px;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .inner-prod-text h3 {
+    font-family: "Avenir-Medium", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px !important;
+    align-self: center;
+    font-weight: 100;
+    font-family: Romana, sans-serif;
+    font-family: Romana, sans-serif;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .inner-prod-text span {
+    font-family: "Avenir-Roman", sans-serif;
+    display: none;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .price {
+    margin: 0px;
+    align-self: center;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .product-list-link .price .amount {
+    font-family: "RomanaBT-Roman", sans-serif;
+    font-size: 20px;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .button {
+    height: 38px;
+    width: 145px;
+    font-size: 15px;
+    font-family: "Avenir-Roman", sans-serif;
+    line-height: 18px;
+    align-self: bottom;
+}
+.dior-content .dior-container .woocommerce-seller .products .type-product .button:hover {
+    background-color: black;
+}
+.dior-content .dior-container .woocommerce-seller .products .slick-dots {
+    margin: 0 auto;
+}
+.dior-content .dior-container .woocommerce-seller .products .slick-dots li {
+    width: 10px;
+    height: 10px;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container {
+    display: grid;
+    grid-template-rows: 190px auto auto 30px;
+    grid-row-gap: 20px;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-image {
+    max-height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-title {
+    font-family: "RomanaBT-Bold", sans-serif;
+    text-transform: uppercase;
+    margin: 0px;
+    justify-self: center;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-tagline {
+    font-family: "AvenirLTStd-Light", sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-learn {
+    align-self: center;
+    width: fit-content;
+    justify-self: center;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-learn span {
+    color: #fff;
+    background-color: #2f3030;
+    padding: 5px 10px;
+    font-family: "AvenirLTStd-Light", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    height: 38px;
+    width: 145px;
+    font-size: 15px;
+    font-family: "Avenir-Roman", sans-serif;
+}
+.dior-content .dior-container .woocommerce-seller .dior-expertise-container .dior-expertise-learn span:hover {
+    background-color: black;
+}
+.dior-content .dior-container a {
+    text-decoration: none;
+    color: #404040;
+}
+@media only screen and (min-width: 768px) {
+    .dior-content .dior-container .woocommerce-seller .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+    }
+    .dior-content .dior-container .woocommerce-seller .products .product {
+        width: 100% !important;
+    }
+    .dior-content .dior-container .woocommerce-seller .products .product:last-of-type {
+        display: none;
+    }
+    .dior-content .dior-container .woocommerce-seller .products:before {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .dior-content .dior-container {
+        margin: 0 auto;
+        display: grid;
+        max-width: 1000px;
+        width: 90%;
+        grid-template-columns: 240px minmax(640px, 740px);
+        grid-column-gap: 20px;
+        grid-template-areas: "diorNavigation diorHeader" "diorNavigation diorImageSlider" "diorNavigation wooBreadcrumbs" "diorNavigation diorDescription" "diorNavigation diorChangeUniverse" "diorNavigation diorHighlightedSection" "diorNavigation diorWhatsNew" "diorNavigation diorBestSellers" "diorNavigation diorExpertise";
+    }
+    .dior-content .dior-container .dior-header {
+        grid-area: diorHeader;
+        margin-bottom: 30px;
+    }
+    .dior-content .dior-container .dior-image-sliders {
+        grid-area: diorImageSlider;
+    }
+    .dior-content .dior-container .woo-path {
+        grid-area: wooBreadcrumbs;
+        position: relative;
+    }
+    .dior-content .dior-container .dior-main-navigation {
+        grid-area: diorNavigation;
+        background-color: #fff;
+    }
+    .dior-content .dior-container .dior-main-navigation .navigation-title {
+        display: block;
+    }
+    .dior-content .dior-container .dior-main-navigation .navigation-title h1 {
+        font-family: "RomanaBT-Bold", sans-serif;
+        font-size: 30px;
+        margin: 10px 0px 10px 20px;
+    }
+    .dior-content .dior-container .dior-description {
+        grid-area: diorDescription;
+        display: block;
+    }
+    .dior-content .dior-container .dior-desktop-navigation {
+        grid-area: diorChangeUniverse;
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.6fr 0.6fr;
+    }
+    .dior-content .dior-container .dior-desktop-navigation .section-title {
+        text-align: left !important;
+        color: #929292;
+    }
+    .dior-content .dior-container .dior-desktop-navigation h5 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: "Avenir-Medium", sans-serif;
+        font-size: 12px;
+        letter-spacing: -0.8px;
+        text-align: center;
+    }
+    .dior-content .dior-container .dior-desktop-navigation h5:nth-of-type(5) {
+        display: none;
+    }
+    .dior-content .dior-container .dior-highlighted-section {
+        grid-area: diorHighlightedSection;
+        display: block;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-column-gap: 30px;
+        margin: 60px 0px;
+    }
+    .dior-content .dior-container .dior-highlighted-section .highlighted-section {
+        display: grid;
+        grid-template-rows: 300px auto 30px;
+        grid-row-gap: 30px;
+        text-align: center;
+    }
+    .dior-content .dior-container .dior-highlighted-section .highlighted-section img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .dior-content .dior-container .dior-highlighted-section .highlighted-section h3 {
+        font-family: "RomanaBT-Bold", sans-serif;
+        text-transform: uppercase;
+        margin: 0px;
+        align-self: center;
+    }
+    .dior-content .dior-container .dior-highlighted-section .highlighted-section a {
+        align-self: center;
+        width: fit-content;
+        justify-self: center;
+    }
+    .dior-content .dior-container .dior-highlighted-section .highlighted-section a span {
+        color: #fff;
+        background-color: #2f3030;
+        padding: 5px 10px;
+        font-family: "AvenirLTStd-Light", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 0;
+        height: 38px;
+        width: 145px;
+        font-size: 15px;
+        font-family: "Avenir-Roman", sans-serif;
+    }
+    .dior-content .dior-container .whats-new-cont {
+        grid-area: diorWhatsNew;
+    }
+    .dior-content .dior-container .best-sellers-cont {
+        grid-area: diorBestSellers;
+    }
+    .dior-content .dior-container .dior-expertise-cont {
+        grid-area: diorExpertise;
+    }
+    .dior-content .dior-container .dior-expertise-cont .dior-expertise-container {
+        grid-template-rows: 250px auto auto 30px;
+    }
+    .dior-content .dior-container .dior-expertise-cont .dior-expertise-container .dior-expertise-image {
+        max-height: 250px;
+    }
+}
+* {
+    outline: none;
+}
+.dior-content .dior-child-container {
+    padding-top: 10px;
+}
+.dior-content .dior-child-container .dior-header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: relative;
+}
+.dior-content .dior-child-container .dior-header .dior-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 40px;
+}
+.dior-content .dior-child-container .dior-categories-button {
+    text-align: center;
+    margin: 30px 0px;
+}
+.dior-content .dior-child-container .dior-categories-button .category-button {
+    width: 220px;
+    height: 30px;
+    background-color: #2f3030;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: "Avenir-Roman", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.dior-content .dior-child-container .dior-categories-button .category-button:hover {
+    background-color: black;
+}
+.dior-content .dior-child-container .navigation-area {
+    display: none;
+}
+.dior-content .dior-child-container .navigation-area .dior-title {
+    display: none;
+}
+.dior-content .dior-child-container .navigation-area .dior-title a {
+    color: #404040;
+    text-decoration: none;
+}
+.dior-content .dior-child-container .navigation-area .dior-sidebar {
+    width: 100%;
+    background-color: #f1f2f2;
+}
+.dior-content .dior-child-container .navigation-area .dior-sidebar a {
+    text-decoration: none;
+    color: #404040;
+}
+.dior-content .dior-child-container .navigation-area.allow {
+    display: block;
+}
+.dior-content .dior-child-container .navigation-area .dior-filtering {
+    display: none;
+}
+.dior-content .dior-child-container .navigation-area .dior-filtering.open {
+    display: block;
+}
+.dior-content .dior-child-container .category-information .category-title {
+    font-family: "RomanaBT-Bold", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.dior-content .dior-child-container .category-information .category-image {
+    object-fit: cover;
+    width: 100%;
+}
+.dior-content .dior-child-container .category-information .category-description {
+    display: none;
+}
+.dior-content .dior-child-container .woo-path {
+    padding-top: 30px;
+}
+.dior-content .dior-child-container .dior-mob-filtering-button {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+.dior-content .dior-child-container .dior-mob-filtering-button .filter-button {
+    width: 90px;
+    height: 30px;
+    background-color: #2f3030;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: "Avenir-Roman", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.dior-content .dior-child-container .dior-mob-filtering-button .filter-button:hover {
+    background-color: black;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-notices-wrapper {
+    display: none;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-result-count {
+    text-align: center;
+    float: none;
+    font-family: "Avenir-Roman", sans-serif;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-ordering:before {
+    display: none;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-ordering {
+    text-align: center;
+    float: none;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-ordering .orderby {
+    border-radius: 7px;
+    font-size: 15px;
+    height: 25px;
+    background-color: #f8f8f8;
+    font-family: "Avenir-Roman", sans-serif;
+}
+.dior-content .dior-child-container .dior-sorting-container .woocommerce-ordering .orderby option:first-of-type {
+    display: none;
+}
+.dior-content .dior-child-container .products .product {
+    min-height: fit-content;
+}
+.dior-content .dior-child-container .products .product .product-list-link {
+    min-height: fit-content;
+    display: grid;
+    grid-template-rows: auto minmax(90px, 120px) minmax(50px, auto);
+}
+.dior-content .dior-child-container .products .product .product-list-link .inner-prod-text {
+    min-height: 90px;
+}
+.dior-content .dior-child-container .products .product .product-list-link .inner-prod-text .dior-new-tag {
+    margin: 0px;
+    display: inline-block;
+    font-size: 16px;
+    color: #7b7d7d;
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 100;
+}
+.dior-content .dior-child-container .products .product .product-list-link .inner-prod-text .dior-category {
+    font-family: "RomanaTOT-Bol", sans-serif;
+    font-size: 17px;
+}
+.dior-content .dior-child-container .products .product .product-list-link .inner-prod-text h3 {
+    font-family: "Avenir-Medium", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px !important;
+    align-self: center;
+    font-weight: 100;
+}
+.dior-content .dior-child-container .products .product .product-list-link .inner-prod-text span {
+    font-family: "Avenir-Roman", sans-serif;
+    display: none;
+}
+.dior-content .dior-child-container .products .product .product-list-link .price {
+    margin-top: 15px;
+}
+.dior-content .dior-child-container .products .product .product-list-link .price .amount {
+    font-size: 20px;
+    align-self: center;
+}
+.dior-content .dior-child-container .products .product .button:hover {
+    background-color: black;
+}
+.dior-content .dior-child-container .woocommerce-pagination {
+    padding-bottom: 30px;
+}
+.dior-content .dior-child-container .dior-filtering,
+.dior-content .dior-child-container .mobile-dior-filtering {
+    display: none;
+    padding-top: 50px;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter {
+    width: 220px;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div h3 span,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div h3 span {
+    font-size: 13px;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul {
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li {
+    font-size: 13px;
+    font-family: "AvenirLTStd-Light", sans-serif;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div h3 span,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div h3 span {
+    font-size: 13px;
+    font-family: "Avenir-Black", sans-serif;
+    text-transform: uppercase;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul {
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li {
+    font-size: 13px;
+    font-family: "AvenirLTStd-Light", sans-serif;
+}
+.dior-content .dior-child-container .dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li span .berocket_slider_start_val,
+.dior-content .dior-child-container .dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li span .berocket_slider_end_val,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li span .berocket_slider_start_val,
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter .widget .berocket_aapf_widget-wrapper ul li span .berocket_slider_end_val {
+    width: 65%;
+}
+.dior-content .dior-child-container .dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div,
+.dior-content .dior-child-container .mobile-dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div {
+    display: none;
+}
+.dior-content .dior-child-container .dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li,
+.dior-content .dior-child-container .mobile-dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li {
+    display: none;
+}
+.dior-content .dior-child-container .dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li span,
+.dior-content .dior-child-container .mobile-dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li span {
+    padding: 8px 0px;
+}
+.dior-content .dior-child-container .dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li span label,
+.dior-content .dior-child-container .mobile-dior-filtering .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul li span label {
+    padding: 0px;
+    font-size: 12px;
+    font-family: "Avenir-Black", sans-serif;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9 {
+    display: block !important;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span {
+    cursor: inherit;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span .checkbox_12538product_cat,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span .checkbox_12539product_cat,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span .checkbox_12540product_cat,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 span .checkbox_12541product_cat,
+.dior-content
+    .dior-child-container
+    .mobile-dior-filtering.makeup-dior-categories-filter
+    .navigation-filter-cont
+    .berocket_single_filter_widget
+    .widget
+    .berocket_aapf_widget-wrapper
+    ul
+    .berocket_term_parent_9321
+    span
+    .checkbox_12538product_cat,
+.dior-content
+    .dior-child-container
+    .mobile-dior-filtering.makeup-dior-categories-filter
+    .navigation-filter-cont
+    .berocket_single_filter_widget
+    .widget
+    .berocket_aapf_widget-wrapper
+    ul
+    .berocket_term_parent_9321
+    span
+    .checkbox_12539product_cat,
+.dior-content
+    .dior-child-container
+    .mobile-dior-filtering.makeup-dior-categories-filter
+    .navigation-filter-cont
+    .berocket_single_filter_widget
+    .widget
+    .berocket_aapf_widget-wrapper
+    ul
+    .berocket_term_parent_9321
+    span
+    .checkbox_12540product_cat,
+.dior-content
+    .dior-child-container
+    .mobile-dior-filtering.makeup-dior-categories-filter
+    .navigation-filter-cont
+    .berocket_single_filter_widget
+    .widget
+    .berocket_aapf_widget-wrapper
+    ul
+    .berocket_term_parent_9321
+    span
+    .checkbox_12541product_cat {
+    display: none;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 label,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 label {
+    margin-left: 0px;
+    color: #404040;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 label:hover,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_9321 label:hover {
+    color: #404040;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12346,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12346 {
+    display: block !important;
+}
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359 span label,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360 span label,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361 span label,
+.dior-content .dior-child-container .dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541 span label,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359 span label,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360 span label,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361 span label,
+.dior-content .dior-child-container .mobile-dior-filtering.makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541 span label {
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.dior-content .dior-child-container .dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348,
+.dior-content .dior-child-container .mobile-dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348 {
+    display: block !important;
+}
+.dior-content .dior-child-container .dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348 span,
+.dior-content .dior-child-container .mobile-dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348 span {
+    height: 50px;
+}
+.dior-content .dior-child-container .dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348 span label,
+.dior-content .dior-child-container .mobile-dior-filtering.skin-care-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12348 span label {
+    position: absolute;
+}
+.dior-content .dior-child-container .dior-filtering.womens-fragrance-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12344,
+.dior-content .dior-child-container .mobile-dior-filtering.womens-fragrance-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12344 {
+    display: block !important;
+}
+.dior-content .dior-child-container .dior-filtering.mens-fragrance-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12345,
+.dior-content .dior-child-container .mobile-dior-filtering.mens-fragrance-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12345 {
+    display: block !important;
+}
+.dior-content .dior-child-container .dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .mobile-dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .mobile-dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .mobile-dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .mobile-dior-filtering.lips-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .mobile-dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .mobile-dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .mobile-dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .mobile-dior-filtering.complexion-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .mobile-dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .mobile-dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .mobile-dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .mobile-dior-filtering.eyes-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541,
+.dior-content .dior-child-container .mobile-dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12359,
+.dior-content .dior-child-container .mobile-dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12360,
+.dior-content .dior-child-container .mobile-dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12361,
+.dior-content .dior-child-container .mobile-dior-filtering.nails-makeup-dior-categories-filter .navigation-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper ul .berocket_term_parent_12541 {
+    display: block !important;
+}
+.dior-content .dior-child-container .mobile-dior-filtering {
+    display: none;
+    background-color: #f1f2f2;
+}
+.dior-content .dior-child-container .mobile-dior-filtering .product-type-filter-cont .berocket_single_filter_widget .widget .berocket_aapf_widget-wrapper .berocket_aapf_widget-title_div .mobile_hide {
+    display: block !important;
+}
+.dior-content .dior-child-container .mobile-dior-filtering .price-filter-cont .widget .brw-price ul .slider .slide .berocket_filter_slider span {
+    background: #2f3030;
+}
+.dior-content .dior-child-container .mobile-dior-filtering .dior-filter {
+    margin: 0 auto;
+}
+.dior-content .dior-child-container .mobile-dior-filtering.open {
+    display: block;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+.dior-content .dior-child-container .backstage-pros-filter .navigation-filter-cont {
+    display: none;
+}
+.dior-content .dior-child-container .dior-end-container {
+    margin-bottom: 100px;
+}
+.dior-content .dior-child-container .dior-end-container .closing-img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.dior-content .dior-child-container .dior-end-container .information-container {
+    text-align: center;
+}
+.dior-content .dior-child-container .dior-end-container .information-container .additional-category-title {
+    font-family: "RomanaBT-Bold", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.dior-content .dior-child-container .dior-end-container .information-container .closing-description {
+    display: none;
+}
+.dior-content .dior-child-container .dior-end-container .information-container a {
+    text-decoration: none;
+    display: inline-block;
+}
+.dior-content .dior-child-container .dior-end-container .information-container a .additional-learn-more {
+    width: 150px;
+    height: 26px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: #2f3030;
+    font-family: "AvenirLTStd-Light", sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-size: 18px;
+}
+@media only screen and (min-width: 768px) {
+    .dior-content .dior-child-container {
+        padding-top: 40px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .dior-content .dior-child-container {
+        display: grid;
+        grid-template-columns: 240px 740px;
+        grid-column-gap: 20px;
+        grid-template-areas: "diorsidebar diorheader" "diorsidebar diorcategoryinfo" "diorsidebar diorbreadcrumb" "diorsidebar diorsorting" "diorsidebar diorproducts" "diorsidebar woopagination" "diorsidebar fragone" "diorsidebar fragtwo" "diorsidebar makeone" "diorsidebar maketwo" "diorsidebar skinone" "diorsidebar skintwo";
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .dior-content .dior-child-container .fragrance-expertise-image-section{
+        grid-area: fragone;
+    }
+    .dior-content .dior-child-container .fragrance-expertise{
+        grid-area: fragtwo;
+    }
+    .dior-content .dior-child-container .makeup-expertise-image-section{
+        grid-area: makeone;
+    }
+    .dior-content .dior-child-container .makeup-expertise{
+        grid-area: maketwo;
+    }
+    .dior-content .dior-child-container .skincare-expertise-image-section{
+        grid-area: skinone;
+    }
+    .dior-content .dior-child-container .skincare-expertise{
+        grid-area: skintwo;
+    }
+    .dior-content .dior-child-container .dior-header {
+        grid-area: diorheader;
+    }
+    .dior-content .dior-child-container .dior-categories-button {
+        display: none;
+    }
+    .dior-content .dior-child-container .navigation-area {
+        grid-area: diorsidebar;
+        display: block;
+    }
+    .dior-content .dior-child-container .navigation-area .dior-title {
+        display: block;
+        margin: 0px;
+        font-family: "RomanaBT-Bold", sans-serif;
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .dior-content .dior-child-container .navigation-area .dior-sidebar {
+        display: block;
+        background-color: #fff;
+    }
+    .dior-content .dior-child-container .navigation-area .dior-filtering {
+        display: block;
+    }
+    .dior-content .dior-child-container .category-information {
+        grid-area: diorcategoryinfo;
+        grid-template-areas: "categorydesc categoryimage";
+        margin-top: 30px;
+        height: 325px;
+    }
+    .dior-content .dior-child-container .category-information .category-title {
+        display: none;
+    }
+    .dior-content .dior-child-container .category-information .category-description {
+        display: block;
+        grid-area: categorydesc;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        height: 100%;
+        position: relative;
+    }
+    .dior-content .dior-child-container .category-information .category-description .category-sect {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: fit-content;
+        padding: 10px;
+    }
+    .dior-content .dior-child-container .category-information .category-description .category-sect h3 {
+        margin: 10px 0px;
+        font-family: "RomanaBT-Roman", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .dior-content .dior-child-container .category-information .category-description .category-sect p {
+        color: white;
+        font-family: "Avenir-Roman", sans-serif;
+        font-weight: 100;
+        font-size: 14px !important;
+    }
+    .dior-content .dior-child-container .category-information .category-image {
+        grid-area: categoryimage;
+        height: 100%;
+    }
+    .dior-content .dior-child-container .woo-path {
+        grid-area: diorbreadcrumb;
+    }
+    .dior-content .dior-child-container .dior-mob-filtering-button {
+        display: none;
+    }
+    .dior-content .dior-child-container .mobile-dior-filtering {
+        display: none;
+    }
+    .dior-content .dior-child-container .dior-sorting-container {
+        grid-area: diorsorting;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    .dior-content .dior-child-container .dior-sorting-container .woocommerce-result-count {
+        justify-self: end;
+    }
+    .dior-content .dior-child-container .dior-sorting-container .woocommerce-ordering {
+        justify-self: start;
+    }
+    .dior-content .dior-child-container .products {
+        grid-area: diorproducts;
+        margin: 60px 0px;
+    }
+    .dior-content .dior-child-container .woocommerce-pagination {
+        grid-area: woopagination;
+    }
+    .dior-content .dior-child-container .dior-end-container {
+        grid-area: diorendarea;
+        position: relative;
+    }
+    .dior-content .dior-child-container .dior-end-container .closing-img {
+        display: block;
+        height: 240px;
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        height: 100%;
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 6%, #000 46%);
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container .additional-category-title {
+        margin: 0px;
+        color: white;
+        align-self: end;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container .closing-description {
+        color: white;
+        display: block;
+        align-self: center;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container a {
+        align-self: start;
+        width: fit-content;
+        justify-self: center;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container a .additional-learn-more {
+        border: 2px solid white;
+        height: 35px;
+        line-height: 33px;
+        width: 160px;
+        background-color: black;
+    }
+    .dior-content .dior-child-container .dior-end-container .information-container a .additional-learn-more:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.feat-post-cont .inner-post {
+    display: block !important;
+}
+.feat-post-cont .inner-post .product_cat-dior .woocommerce-breadcrumb {
+    margin-bottom: 40px;
+}
+.feat-post-cont .inner-post .product_cat-dior .images {
+    border: none;
+}
+.feat-post-cont .inner-post .product_cat-dior .dior-gallery {
+    height: fit-content;
+}
+.feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video a {
+    display: block;
+    position: relative;
+}
+.feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video a .video-thumbnail {
+    object-fit: cover;
+    margin: 0 auto;
+}
+.feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video a .video-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary {
+    margin-top: 0px;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .dior-new-tag {
+    display: inline-block;
+    font-family: "Avenir-Medium", sans-serif;
+    color: #656565;
+    font-size: 18px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .product_title {
+    text-transform: uppercase;
+    font-family: "RomanaTOT-Bol", sans-serif;
+    font-size: 27px;
+    margin-bottom: 16px;
+    color: #000;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .brand-family {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #656565;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .brand-family span {
+    font-family: "Avenir-Medium", sans-serif;
+    font-size: 16px;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .tab-header-cont h2 {
+    font-family: "Avenir-Medium", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .size-cont {
+    margin-top: 40px;
+    font-family: "Avenir-Medium", sans-serif;
+    font-size: 16px;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .size-cont span {
+    font-family: "Avenir-Black", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .product-selection-var .qty-cont {
+    margin-top: 10px !important;
+    font-family: "Avenir-Medium", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .product-selection-var .qty-cont span {
+    font-family: "Avenir-Black", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .price .amount {
+    font-size: 27px;
+    font-family: "RomanaTOT-Bol", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .price .amount span {
+    font-family: "Avenir-Medium", sans-serif;
+    font-size: 18px;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .cart .button {
+    height: 38px;
+    width: 145px;
+    font-size: 15px;
+    font-family: "Avenir-Roman", sans-serif;
+}
+.feat-post-cont .inner-post .product_cat-dior .summary .cart .button:hover {
+    background-color: black;
+}
+.dior-prod-feat-banner {
+    padding: 3em 0 !important;
+}
+.dior-prod-feat-banner .dior-banner-single-prod {
+    height: 60px;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.dior-prod-feat-banner .dior-banner-single-prod a {
+    text-decoration: none;
+}
+.dior-prod-feat-banner .dior-banner-single-prod a .dior-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 40px;
+}
+.page-container .upsells .products .product .product-list-link {
+    display: grid;
+    grid-template-rows: auto minmax(70px, auto) minmax(50px, auto);
+}
+.page-container .upsells .products .product .product-list-link .inner-prod-text {
+    min-height: 90px;
+}
+.page-container .upsells .products .product .product-list-link .inner-prod-text .dior-new-tag {
+    margin: 0px;
+    display: inline-block;
+    font-size: 16px;
+    color: #7b7d7d;
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 100;
+}
+.page-container .upsells .products .product .product-list-link .inner-prod-text .dior-category {
+    font-family: "RomanaTOT-Bol", sans-serif;
+    font-size: 17px;
+}
+.page-container .upsells .products .product .product-list-link .inner-prod-text h3 {
+    font-family: "Avenir-Medium", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px !important;
+    align-self: center;
+    font-weight: 100;
+}
+.page-container .upsells .products .product .product-list-link .price {
+    margin: 0px;
+    align-self: center;
+}
+.page-container .upsells .products .product .product-list-link .price .amount {
+    font-family: "RomanaBT-Roman", sans-serif;
+    font-size: 20px;
+}
+.page-container .upsells .products .product .button {
+    height: 30px;
+    width: 145px;
+    font-size: 15px;
+    font-family: "Avenir-Roman", sans-serif;
+    line-height: 10px;
+}
+.page-container .upsells .products .product .button:hover {
+    background-color: black;
+}
+@media only screen and (min-width: 768px) {
+    .feat-post-cont .inner-post .product_cat-dior {
+        grid-template-areas: "breadcrumb breadcrumb" "woocommercenotification woocommercenotification" "mainimage summary" "galleryimages summary" !important;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .woocommerce-notices-wrapper {
+        grid-area: woocommercenotification !important;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .woocommerce-notices-wrapper .woocommerce-message {
+        margin: 20px !important;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .images {
+        display: block !important;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery {
+        display: grid;
+        grid-area: galleryimages;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        max-width: none !important;
+        top: -20px;
+        width: 100%;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image {
+        height: 120px;
+        width: auto;
+        background-color: white;
+        cursor: pointer;
+        margin: 0px;
+        opacity: 0.6;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image.active {
+        border: 1px solid #2f3030;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image .mobile-link {
+        display: none;
+        outline: none;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image.show {
+        opacity: 1;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video {
+        opacity: 0.6;
+        height: 120px;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video:hover {
+        opacity: 0.9;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video a {
+        height: 116px;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-product-video a .video-thumbnail {
+        height: 116px;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .add-image-enrichment {
+        display: none;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .add-image-enrichment.enable {
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dior-content {
+        padding-top: 0px !important;
+    }
+    eat-post-cont .inner-post .product_cat-dior .woocommerce-notices-wrapper .woocommerce-message {
+        display: grid;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .woocommerce-notices-wrapper .woocommerce-message .view-cart {
+        width: fit-content;
+        margin-top: 10px;
+        justify-self: center;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image {
+        text-align: center;
+        background-color: white;
+        position: relative;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image .change-img {
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .dior-single-image .mobile-link {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        outline: none;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .slick-list .slick-track {
+        padding-bottom: 30px;
+        background-color: white;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .slick-dots {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding-bottom: 10px;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .dior-gallery .slick-dots li {
+        width: 10px;
+        height: 10px;
+    }
+    .feat-post-cont .inner-post .product_cat-dior .summary .dior-new-tag {
+        padding-top: 50px;
+    }
+}
+.dior-sidebar {
+    width: 100% !important;
+}
+.dior-sidebar .filter-container .dior-cat-filter {
+    height: 60px;
+    position: relative;
+    text-align: center;
+    margin: 5px 0px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.dior-sidebar .filter-container .dior-cat-filter:last-of-type {
+    display: none;
+}
+.dior-sidebar .filter-container .dior-cat-filter .parent-filter::after {
+    transition: 0.5s;
+}
+.dior-sidebar .filter-container .dior-cat-filter .parent_filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    text-transform: uppercase;
+    font-family: Avenir Regular;
+}
+.dior-sidebar .filter-container .dior-cat-filter .parent_filter a:visited {
+    color: #404040;
+}
+.dior-sidebar .filter-container .dior-cat-filter .parent_filter .fa,
+.dior-sidebar .filter-container .dior-cat-filter .parent_filter .fas {
+    display: none;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list .view-all-button {
+    text-decoration: underline;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list li {
+    text-transform: capitalize;
+    font-family: "Avenir-Light", sans-serif;
+    font-size: 13px;
+    padding: 8px 0px;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list li a {
+    text-decoration: none;
+    color: #404040;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list li a:hover {
+    transition: 0.3s;
+    color: #7b7d7d;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list li a:active {
+    color: #7b7d7d;
+}
+.dior-sidebar .filter-container .dior-cat-filter .level-two-list .level-three-list {
+    display: none;
+}
+.dior-sidebar .filter-container .dior-cat-filter.open {
+    height: fit-content;
+}
+.dior-sidebar .filter-container .dior-cat-filter.open .parent_filter {
+    position: relative;
+    padding: 20px 0px;
+}
+.dior-sidebar .filter-container .dior-cat-filter.open .level-two-list {
+    display: block;
+    padding-bottom: 20px;
+}
+@media only screen and (min-width: 992px) {
+    .dior-sidebar .filter-container .dior-cat-filter {
+        text-align: left;
+        height: fit-content;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter {
+        position: relative;
+        cursor: pointer;
+        margin: 5px 20px 5px 0px;
+        text-transform: uppercase;
+        font-family: "Avenir-Black", sans-serif;
+        font-size: 13px;
+        display: inline-block;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter a {
+        color: #404040;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter .fa,
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter .fas {
+        display: block;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter .fa-caret-right {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 15px;
+        display: inline-block;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter .fa-caret-right .rotate {
+        transition: 0.3s;
+        transform: rotate(90deg);
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter:hover {
+        transition: 0.3s;
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .parent_filter:active {
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list {
+        margin-left: 30px;
+        margin-right: 20px;
+        padding: 0px;
+        cursor: pointer;
+        display: none;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list li {
+        text-transform: capitalize;
+        font-family: "Avenir-Light", sans-serif;
+        font-size: 12px;
+        padding: 4px 0px;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list li a {
+        text-decoration: none;
+        color: #404040;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list li a:hover {
+        transition: 0.3s;
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list li a:active {
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list .visible {
+        display: block;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list .level-three-list {
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list .level-three-list:hover {
+        transition: 0.3s;
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter .level-two-list .level-three-list:active {
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter:nth-of-type(4) .parent_filter a .fas,
+    .dior-sidebar .filter-container .dior-cat-filter:nth-of-type(6) .parent_filter a .fas {
+        visibility: hidden;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter a {
+        text-decoration: none;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter a:hover {
+        transition: 0.3s;
+        color: #7b7d7d;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter.open {
+        height: fit-content;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter.open .parent_filter {
+        padding: 0px;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter.open .parent_filter .fas {
+        transform: scale(1) rotate(90deg);
+        transform-origin: center left;
+    }
+    .dior-sidebar .filter-container .dior-cat-filter.open .level-two-list {
+        padding-bottom: 0px;
+        display: block;
+    }
+}
+a,
+a:active,
+a:focus {
+    outline: none;
+}
+.dior-content .dior-child-container {
+    grid-template-columns: 240px minmax(640px, 740px);
+}
+.dior-content .dior-child-container .expertise-banner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    max-height: 325px;
+    max-width: 100%;
+    text-align: center;
+}
+.dior-content .dior-child-container .expertise-banner .dior-expert-image {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 325px;
+    object-fit: cover;
+}
+.dior-content .dior-child-container .expertise-path {
+    padding-top: 0px;
+}
+.dior-content .dior-child-container .dior-expertise-section {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-bottom: 50px;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-section-title {
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    margin-top: -25px;
+    background-color: white;
+    padding-top: 30px;
+}
+.dior-content .dior-child-container .category-section .cat-expertise-image{
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+}
+/* .dior-content .dior-child-container .dior-expertise-section .dior-section-title:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    width: 25%;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-section-title:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    width: 25%;
+    top: 50%;
+    right: 0;
+    z-index: 0;
+} */
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item {
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-mini-title {
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: "Avenir-Roman", sans-serif;
+    font-weight: 100;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-title, .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .products-list .preview-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-family: "RomanaBT-Bold", sans-serif;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-content p {
+    font-size: 14px;
+    font-family: "Avenir-Light", sans-serif;
+    font-weight: 100;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-images {
+    text-align: center;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-images img {
+    width: 100%;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-button {
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 220px;
+    border: 1px solid #404040;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: "Avenir-Light", sans-serif;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-button a {
+    text-decoration: none;
+    color: #404040;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-button:hover {
+    background-color: #404040;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .preview-button:hover a {
+    color: white;
+}
+/* .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 0;
+} */
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .image-gallery .expertise-image-gallery-item{
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .desktop-gallery{
+    display: none;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item:last-of-type:after {
+    display: none;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-2 img {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-3 img {
+    margin-bottom: 20px;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-3 img:nth-of-type(2) {
+    display: inline-block;
+    width: 48%;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-3 img:nth-of-type(3) {
+    display: inline-block;
+    width: 48%;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-4 img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-4 img:nth-of-type(3) {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-length-4 img:nth-of-type(4) {
+    display: inline-block;
+    width: 48%;
+}
+.dior-content .dior-child-container .dior-expertise-section .fragrance-expertise #fragrance {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+.dior-content .dior-child-container .dior-expertise-section .makeup-expertise-content #makeup {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+.dior-content .dior-child-container .dior-expertise-section .makeup-expertise-content #backstage-pros {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+.dior-content .dior-child-container .dior-expertise-section .skincare-expertise #skincare {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+.dior-content .dior-child-container .skincare-expertise .skincare-mini-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    font-family: "RomanaBT-Bold", sans-serif;
+    font-size: 18.72px;
+}
+.dior-content .dior-child-container .skincare-expertise .skincare-intro {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Avenir-Light", sans-serif;
+    font-weight: 100;
+}
+.dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .products-list .dior-expertise-products .slick-dots{
+    margin: 0 auto;
+}
+@media screen and (min-width: 600px){
+    .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .desktop-gallery{
+        display: grid !important;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .dior-preview-item .image-gallery{
+        display: none;
+    }
+    .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .fragrance-section-2 .desktop-gallery .expertise-image-gallery-item:last-child{
+        grid-column: 1/4;
+    }
+    .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .skincare-section-1 .desktop-gallery .expertise-image-gallery-item:first-child, .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .skincare-section-2 .desktop-gallery .expertise-image-gallery-item:last-child{
+        grid-column: 1/3;
+    }
+    /* .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .products-list .dior-expertise-products{
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+}
+
+@media screen and (min-width: 768px){
+    .dior-content .dior-child-container .dior-expertise-section .dior-expertise-content .products-list .dior-expertise-products{
+        grid-template-columns: none !important;
+    }
+}

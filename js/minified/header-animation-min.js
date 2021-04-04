@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()>0?$("header").addClass("sticky-header"):$("header").removeClass("sticky-header")});

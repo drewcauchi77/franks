@@ -1,0 +1,44 @@
+[27-Nov-2019 16:41:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[30-Nov-2019 19:21:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[27-Apr-2020 20:29:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[26-Sep-2020 04:26:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[30-Sep-2020 08:27:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[30-Sep-2020 08:39:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[07-Oct-2020 19:47:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[10-Oct-2020 17:18:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[11-Oct-2020 04:23:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[19-Oct-2020 17:07:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14
+[20-Oct-2020 19:31:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/franks/public_html/wp-content/themes/franks/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/franks/public_html/wp-content/themes/franks/index.php on line 14

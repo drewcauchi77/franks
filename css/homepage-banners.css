@@ -1,0 +1,115 @@
+.custom-free-delivery-class{
+	padding-top: 115px;
+	position: fixed;
+	z-index: 99998;
+	width: 100%;
+}
+.homepage-desktop-banners{
+	display: none;
+	padding-top: 220px;
+}
+.homepage-mobile-banners{
+	padding-top: 185px;
+}
+.homepage-desktop-banners .single-desktop-slide .banner{
+	width: 100%;
+	height: auto;
+    object-fit: cover;
+}
+.term-seasonal-offers .homepage-desktop-banners .single-desktop-slide .banner{
+	height: auto;
+}
+.term-seasonal-offers .homepage-desktop-banners .single-desktop-slide .title-overlay{
+	bottom: -10px;
+}
+.term-seasonal-offers #page .fnk-art-class{
+	padding-top: 30px !important;
+}
+.homepage-mobile-banners .single-mobile-slide .banner{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+.homepage-desktop-banners .single-desktop-slide{
+	position: relative;
+	max-height: 560px;
+}
+.homepage-mobile-banners .single-mobile-slide{
+	position: relative;
+	height: 500px;
+}
+.homepage-mobile-banners .single-mobile-slide .button-link, .homepage-desktop-banners .single-desktop-slide .button-link{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin: 0 auto;
+    width: 140px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2f3030;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+}
+.homepage-mobile-banners .single-mobile-slide .title-overlay, .homepage-desktop-banners .single-desktop-slide .title-overlay{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    height: 180px;
+    background-color: rgba(238, 248, 253, 0.6);
+}
+.homepage-mobile-banners .single-mobile-slide .title-overlay .title-text, .homepage-desktop-banners .single-desktop-slide .title-overlay .title-text{
+	margin-top: 30px;
+	font-size: 17px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.homepage-mobile-banners .single-mobile-slide .button-link .button-text, .homepage-desktop-banners .single-desktop-slide .button-link .button-text{
+	font-family: "AvenirLTStd-Light",sans-serif;
+    font-size: 14px;
+}
+.homepage-desktop-banners .single-desktop-slide .button-link:hover,.homepage-mobile-banners .single-mobile-slide .button-link:hover{
+	background-color: #000;
+}
+.homepage-mobile-banners .slick-dots, .homepage-desktop-banners .slick-dots{
+	margin-top: 40px;
+}
+@media only screen and (min-width: 768px){
+	.custom-free-delivery-class{
+		padding-top: 178px;
+	}
+	.custom-free-delivery-class.move{
+		padding-top: 140px;
+	}
+	.homepage-mobile-banners{
+		display: none !important;
+	}
+	.homepage-desktop-banners{
+		display: block;
+	}
+	.homepage-desktop-banners .single-desktop-slide .title-overlay .title-text{
+		font-size: 22px;
+	}
+	.feat-post-cont .inner-post .product{
+		display: grid;
+	}
+	.feat-post-cont .inner-post .product .woocommerce-notices-wrapper{
+		grid-area: breadcrumb;
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 500px){
+	.term-seasonal-offers .homepage-mobile-banners .single-mobile-slide .banner{
+		object-fit: contain;
+	}
+	.term-seasonal-offers .homepage-mobile-banners .single-mobile-slide{
+		height: auto;
+	}
+}

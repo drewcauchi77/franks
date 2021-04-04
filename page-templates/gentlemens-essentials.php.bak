@@ -1,0 +1,406 @@
+<?php
+/**
+ * The main template file
+ * 
+ * Template Name: Gentlemen's Essentials Template	
+ * 
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package franks
+ */
+
+get_header();
+?>
+	<main id="gentlemens-essentials">
+	
+		<div class="home-banner-cont feat-banner-cont wb-main-banner">
+			<!-- EMPTY -->
+		</div>
+
+		<div class="page-nav">
+			<div class="inner-nav">
+
+				<?php
+
+				$category_args = array(
+					'orderby' => 'name',
+					'hide_empty' => false,
+					'parent' => 0
+				);
+				
+				$taxonomy = "brandscat";
+
+				$categories = get_terms( $taxonomy,$category_args );
+
+				foreach ($categories as $cat){
+
+					if($cat->parent==0){
+						?>
+
+						<a href=<?php echo get_term_link($cat->slug, $taxonomy)?>>
+					
+						<span class="section-title"><?php echo $cat->name; ?></span>
+
+						</a>
+
+						<?php
+					}
+				}
+
+				?>
+			</div>
+		</div>
+
+		<div class="main-container">
+			<?php 
+			$title = 'The art of living beautiful';
+			include('title-divider.php'); ?>
+
+			<div class="heritage-intro">
+				<h3>About us</h3>
+				<span>Since 2005</span>
+				<p>The Gentlemen's Essentials is that special place where quality is chosen over quantity, 
+					it is the place where the individual story is prized and given preference over 
+					the larger, blander and homogenous ideals of demanding multinational companies. 
+					Our aim is simple, we seek to give the best service possible, inspired from our 
+					genuine passion for our products and beliefs, whilst offering our clients the 
+					rarest of items that are chosen for their unique identity and social background. 
+					This is our doctrine, to be the best and to stock: the rare, the marvelous, the 
+					tempting and the most beautiful products that the world has to offer…</p>
+			</div>
+
+			<div class="wine-boutique-shop">
+			</div>
+			
+			<div class="upcoming-events section-container">
+
+				<div class="event-title">
+					<h3>Upcoming Events</h3>
+				</div>
+
+				<div class="events-wrapper upcoming-events">
+				<?php
+				
+				/* 	Array initialised for upcoming events
+					Post type events for the WB Events by the slug events
+					Show all upcoming published events underneath each other
+					In ascending order according to their starting date 
+					denoted by category which is being set from the WB Events
+					'upcoming' and 'gentlemens-essentials' in relation 'AND',
+					this means that both tax queries should be abided to*/
+
+				$upcom_args = array(
+					'post_type' => 'events',
+					'posts_per_page' => -1,
+					'post_status' => 'publish',
+					'post__not_in' => array($post_id),
+					'meta_key' => 'wine_boutique_event_starting_date',
+					'orderby' => 'meta_value',
+					'order' => 'ASC',
+					'tax_query' => array(
+						// 'relation' => 'AND',
+						// array(
+						// 	'taxonomy' => 'eventscat',
+						// 	'field'    => 'slug',
+						// 	'terms'    => 'upcoming',
+						// ),
+						array(
+							'taxonomy' => 'eventscat',
+							'field'    => 'slug',
+							'terms'    => 'gentlemens-essentials',
+						),
+					),
+				);
+
+				//Denoting a new WP_Query to loop within all posts obeying the above
+				//args within array to obtain information from posts
+
+				$upcom_query = new WP_Query($upcom_args);
+
+				//Checking for posts within the above args set
+
+				if($upcom_query->have_posts()){
+
+					//Looping the post with a Wordpress loop
+					while ($upcom_query->have_posts() ) : $upcom_query->the_post();
+
+					$this_field = get_fields($post->ID);
+					//var_dump($field);
+
+					$date_from_value = $this_field['wine_boutique_event_starting_date'];
+					$date_to_value = $this_field['wine_boutique_event_ending_date'];
+
+					$integer_date_from = strtotime($date_from_value);
+					$integer_date_to = strtotime($date_to_value);
+					$today_date = strtotime(date("Y-m-d"));
+
+					?>
+
+					<!-- Getting the permalink of the current post which is being shown and
+					enabling it around the whole div for clickable options -->
+
+						<?php if($integer_date_from >= $today_date || $integer_date_to >= $today_date){?>
+
+							<a class="related-link" href=<?php echo get_permalink(); ?>>
+
+							<div class="event-box">
+
+							<?php
+							//Obtain the post featured image which will be the background image
+							//spanning whole width and height, obtained from the post itself
+
+							if(has_post_thumbnail()){
+								$img_url = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+							?>
+							<!-- Showing the image -->
+
+								<img class="event-featured-img" src=<?php echo $img_url;?>>
+
+							<?php
+							}
+							?>
+
+							<div class="event-info">
+							
+							<!-- Obtaining the title of the event name by the_title and enclosing
+							within h1 tags for styling -->
+
+							<?php the_title('<h1 class="event-name">', '</h1>'); ?>
+							<?php 
+
+							//Get all custom fields for specific event denoting by post ID
+
+							$field = get_fields($post->ID);
+
+							//Obtain the starting date for each event from ACF
+
+							$date_from = $field['wine_boutique_event_starting_date'];
+							$date_to = $field['wine_boutique_event_ending_date'];
+
+							//Separation of the day from the month for styling
+
+							$event_day = date('j', strtotime($date_from));
+							$event_month = date('F', strtotime($date_from));
+
+							$event_day_end = date('j', strtotime($date_to));
+							$event_month_end = date('F', strtotime($date_to));
+
+							//Obtaining the first three letters of the month January -> Jan
+
+							$event_month = substr($event_month, 0, 3);
+							$event_month_end = substr($event_month_end, 0, 3);
+
+							//Conjunction of strings to denote date
+							
+							if($date_to == ""){
+								echo '<h2 class="event-date">' . $event_day . " " . $event_month . '</h2>';
+							}else{
+								echo '<h2 class="event-date">' . $event_day . " " . $event_month . " - ". $event_day_end . " " . $event_month_end .'</h2>';
+							}
+
+							?>
+
+							</div>
+
+							</div>
+
+						</a>
+						<?php } ?>
+					<?php
+					
+					endwhile;
+				}else{
+					
+				}
+
+				?>
+				</div>
+
+			</div>
+			
+			<div class="news-container">
+
+				<div class="news-title">
+					<h3>News</h3>
+				</div>
+
+				<div class="news-wrapper">
+
+				<?php
+
+				/* 	Array initialised for news that are under posts in the 
+					Wordpress dashboard.
+					There is place for 2 news pieces that are shown and these are
+					in order by the publish date as 'date' and in DESCENDING order
+					so that the latest news piece is obtained. Only events that
+					fall under the Wine Boutique category are shown since they then
+					fall under Gentlemen's Essentials*/
+
+				$upcom_news_args = array(
+					'posts_per_page' => 2,
+					'post_status' => 'publish',
+					'post__not_in' => array($post_id),
+					'orderby' => 'date',
+					'order' => 'DESC',
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'category',
+							'field'    => 'slug',
+							'terms'    => 'wine-boutique',
+						),
+					),
+				);
+
+				//Denoting a new WP_Query to loop within all posts obeying the above
+				//args within array to obtain information from posts
+
+				$upcom_news_query = new WP_Query($upcom_news_args);
+
+				//Initialising a counter that will denote when the first post
+				// and the second post will be looped so that different information
+				// and text is provided
+
+				$counter = 1;
+
+				//Checking for posts within the above args set
+
+				if($upcom_news_query->have_posts()){
+
+					//Looping the post with a Wordpress loop
+					while ($upcom_news_query->have_posts() ) : $upcom_news_query->the_post();
+
+						//Looping for the first counter which will show most recent news piece
+						if($counter == 1){
+							?>
+
+							<?php	
+
+							echo '<div class="news-details first-news">';
+
+							echo '<h4 class="latest-header">Latest News</h4>';
+
+							//Obtaining published news post date
+							//The year part is stripped off the first 2 digits with substr
+							// and the end two digits remain
+							//Then it is concatenated with the remaining date to obtain as per design
+
+							$full_year = get_the_date('Y');
+							$year = substr($full_year, 2, 2);
+							echo '<p class="publish-date">'.get_the_date('d.m.').$year.'</p>';
+
+							//A small introduction of the news article is obtained here
+							//This is done by get_the_content and the first 127 characters
+							//are obtained to create this introduction
+
+							$introduction = get_the_content();
+							$phrase = substr($introduction, 0, 127);
+							echo '<p class="news-content">' . $phrase . '...</p>';
+
+							?>
+							<a class="related-link" href=<?php echo get_permalink(); ?>>
+
+								<h4>READ MORE</h4>
+
+							</a>
+							<?php
+
+							echo '</div>';
+
+							
+
+							//Obtain the post featured image which will be the background image
+							//spanning whole width and height, obtained from the post itself
+
+							if(has_post_thumbnail()){
+								$img_url = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+							?>
+							<!-- Showing the image -->
+							<div class="first-news-image" style="background-image:url(<?php echo $img_url;?>)">
+							</div>
+							<?php
+							}
+
+							
+							//When counter reaches the second post do a different design
+							//than the previous one, remove everything and insert next
+							
+						}else if($counter == 2){
+
+							echo '<div class="news-details second-news">';
+
+							?>
+
+							<p class="next-news">NEXT:</p>
+
+							<a class="related-link" href=<?php echo get_permalink(); ?>>
+							
+							<?php the_title('<h1 class="news-name">', '</h1>');?> 
+							
+							</a>
+							
+							<?php
+
+							echo '</div>';
+						}
+
+					?>
+					
+					<?php ?>
+					
+					<?php 
+
+					//Counter increment for post - POST INCREMENT
+					$counter++;
+
+					endwhile;
+
+				}else{
+
+				}
+				?>
+				</div>
+
+			</div>
+			
+			<div class="contact-container">
+				<div class="inner-block">
+
+					<h3>Contact</h3>
+
+					<span>The Gentlemen's Essentials</span>
+
+					<p class="shop-address">
+						The Plaza Shopping Centre,<br>
+						Level 2, Bisazza Street, Sliema.<br>
+						+356 2131 6201
+					</p>
+
+					<h3>Follow us on Facebook!</h3>
+
+					<div class="social-container">
+
+						<a href="https://www.facebook.com/FranksGentlemensEssentials/" target="_blank">
+
+							<?php include(dirname(__FILE__).'/../images/facebook.svg');?>
+
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="contact-img-background"></div>
+
+			</div>
+
+		</div>	
+
+	</main>
+	
+<?php
+get_footer();

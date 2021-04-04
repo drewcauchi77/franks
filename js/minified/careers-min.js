@@ -1,0 +1,1 @@
+$(".vacancy-info").click(function(){var a=$(this).data("index");$(".vacancy-details").fadeOut(),$('.vacancy-details[data-index="'+a+'"]').fadeIn()});
